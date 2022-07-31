@@ -1,0 +1,38 @@
+class Circle
+{
+	public float r;
+
+	Circle(float a)
+	{
+		this.r=a;
+	}
+	public void setRadius(float b)
+	{
+		this.r=b;
+	}
+	public float getRadius()
+	{
+		return this.r;
+	}
+	public float getCircumference()
+	{
+		float C=2*3.14f*r;
+		return C;
+	}
+	public float getArea()
+	{
+		float A=3.14f*r*r;
+		return A;	
+	}
+}
+	public class MainDemoCircle
+{
+	public static void main(String args[])
+	{
+		Circle C=new Circle(10.2f);
+		C.setRadius(15.21f);
+		System.out.println(C.getRadius());
+		System.out.println(C.getCircumference());
+		System.out.println(C.getArea());
+	}
+}
